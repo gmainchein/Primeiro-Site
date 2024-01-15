@@ -1,0 +1,333 @@
+p {
+  font-family: Roboto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.UberRequest {
+  font-size: 34px;
+  color: black;
+  margin-bottom: 12px;
+  margin-top: 5px;
+}
+
+.UberButton {
+  color: white;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.UberPickup , .UberDestination {
+  font-family: Arial;
+  display: block;
+  padding-right: 200px;
+  color: rgb(66, 65, 65);
+  background-color: rgba(233, 233, 233, 0.918);
+  margin-bottom: 21px;
+  border: none;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.UberLater {
+  cursor: pointer;
+  border: none;
+  margin-left: 9px;
+  background-color: rgba(233, 233, 233, 0.918);
+  color: black;
+  padding-left: 17px;
+  padding-right: 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  transition: opacity 0.15s;
+}
+
+.UberLater:hover{
+  opacity: 0.6;
+}
+.AmazonButton {
+  color: black;
+  background-color: rgb(255, 216, 20);
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border: none;
+  border-radius: 18px;
+  margin-left: 7px;
+  cursor: pointer;
+  transition: opacity, 0.3s;
+  display: block;
+  margin-top: 10px;
+}
+.AmazonButton:hover {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 45px;
+  padding-right: 45px;
+  opacity: 0.7;
+}
+.videoTitle {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  width: 300px;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+.videoStats {
+  font-size: 14px;    
+  color: rgb(96, 96, 96);
+}
+.videoAutor {
+  margin-top: 5px;
+  font-size: 14px;    
+  color: rgb(96, 96, 96);  
+}
+.videoDescription {
+  width: 300px;
+  margin-top: 5px;
+  color: rgb(96, 96, 96);
+  font-size: 14px;
+  line-height: 20px;
+}
+.appleText {
+  margin-left: 20px;
+  margin-top: 80px;
+  color: white;
+  background-color: rgb(227, 65, 64);
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+.appleShop {
+  cursor: pointer;
+}
+.appleShop:hover {
+  text-decoration: underline;
+}
+
+.principalDollar {
+ font-size: xx-large;
+}
+
+.usd {
+  color: gray;
+  font-size: small;
+}
+
+.valuation {
+  color: rgb(2, 105, 2);
+  margin-top: 7px;
+}
+.previousUsd {
+  margin-top: 7px;
+  color: rgb(87, 86, 86);
+}
+.decrease {
+  color: red;
+}
+.imagem {
+  border-radius: 35px;
+  width: 55px;
+  height: 55px;
+  margin-top: 19px;
+  object-fit: cover;
+  vertical-align: middle;
+  margin-bottom: 10px;
+  margin-left: 4px;
+  border: 10px;
+  border-color: black;
+  
+}
+.SearchBar {
+  font-size: 18px;
+  color: rgb(51, 50, 50);
+  border: none;
+  font-family: Arial;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-left: 4px;
+  width: 250px;
+  margin-top: 5px;
+}
+
+.guiTweet {
+  margin-left: 2px;
+  margin-right: 2px;
+  color: white;
+  background-color: rgb(29, 161, 242);
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: box-shadow 0.15s,
+  opacity 0.20s;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 14px;
+  padding-right: 14px;
+  vertical-align: middle;
+}
+.guiTweet:hover {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+  opacity: 0.7;
+}
+
+.TweetDesign {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
+  border: none;
+  display: inline-block;
+  width: 425px;  
+  border-radius: 15px;
+  padding-left: 10px;
+  margin-bottom: 7px;
+}
+.EmailLinkedIn {
+  color: rgb(85, 84, 84);
+}
+.SearchBarLinkedIn{
+  width: 385px;
+  margin-top: 4px;
+}
+.AgreeTermsLinkedIn{
+ margin-top: 10px;
+ margin-bottom: 10px;
+ color: rgb(71, 71, 71);
+}
+
+.AgreeJoinLinkedIn {
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: rgb(25, 25, 255);
+  font-family: Arial;
+  text-align: center;
+  border-radius: 90px;
+  padding-left: 130px;
+  padding-right: 160px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 5px;
+  transition: opacity, 0.20s;
+  display: block;
+}
+.AgreeJoinLinkedIn:hover {
+  opacity: 0.8;
+  box-shadow: 3px 3px 3px rgb(51, 50, 50);
+}
+
+.videoAutor , .videoStats {
+  display: inline-block;
+}
+
+.PetBook {
+  margin-left: 5px;
+  margin-top: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 220px;
+  border: black; 
+  display: inline-block;
+  margin-right: 4px; 
+  vertical-align: top;
+  margin-bottom: 30px;
+}
+.PetImg {
+ object-fit: cover;
+  height: 204px;
+  width: 220px;
+}
+
+.PetName{
+  margin-left: 2px;
+  font-size: 15px;
+  font-family:  Roboto;
+  margin-top: 6px;
+  font-weight: bold;
+}
+.PetCommon {
+  color: rgb(92, 92, 92);
+  margin-left: 2px;
+  margin-top: 2px;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+.PetAdd {
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: rgb(41, 41, 252);
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 6px;
+  margin-left: 2px;
+  margin-bottom: 10px;
+  transition: opacity 0.2s;
+}
+.PetAdd:hover {
+  opacity: 0.7;
+}
+
+.instaPicture {
+
+  margin-left: 5px;
+object-fit: cover;
+border-radius: 35px;
+  width: 55px;
+  height: 55px
+}
+
+.instaName{
+  font-weight: 600;
+  font-size: 17px;
+  margin-left: 12px;
+}
+.instaTitle , .instaPopularity {
+  color: rgb(80, 79, 79);
+  font-size: 15px;
+  margin-top: 5px;
+  margin-left: 12px;
+}
+
+.instaFollow {
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: rgb(74, 74, 253);
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 6px;
+  transition: opacity 0.3s;
+  vertical-align: middle;
+  margin-bottom: 39px;
+}
+
+.instaFollow:hover{
+  opacity: 0.6;
+}
+.divInstaPicture , .divInstaStats , .divInstaFollow{
+  display: inline-block;
+  font-family: Roboto;
+}
+
+.divInstaFollow{
+  margin-left: 200px;
+  vertical-align: center;
+}
+.divInstaMutualTemplate{
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
