@@ -231,14 +231,8 @@ p {
 }
 
 .PetBook {
-  margin-left: 5px;
-  margin-top: 40px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 220px;
   border: black; 
-  display: inline-block;
-  margin-right: 4px; 
-  vertical-align: top;
   margin-bottom: 30px;
 }
 .PetImg {
@@ -277,6 +271,43 @@ p {
 }
 .PetAdd:hover {
   opacity: 0.7;
+}
+
+.sponsors{
+  font-family: 'IBM Plex Sans', sans-serif;  
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+  0px 8px 13px rgba(0,0,0,0.1),
+  0px 18px 23px rgba(0,0,0,0.1);
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.spotifyLogo{
+  display: flex;
+  object-fit: cover;
+  height: 40px;
+  width: 40px; 
+}
+.divSponsors{
+  margin-bottom: 30px;
+  opacity: 0.98;
+  background-color: rgb(41, 41, 252);
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 3px;
+  padding-top: 13px;
+  padding-bottom: 70px;
+  padding-left: 5px;
+  padding-right: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.divSpotify {
+  display: flex;
+  margin-top: 20px;
 }
 
 .instaPicture {
@@ -330,4 +361,100 @@ border-radius: 35px;
 .divInstaMutualTemplate{
   margin-bottom: 0px;
   margin-top: 0px;
+}
+
+.divSearchBar {
+  margin-top: 30px;
+  background-color: rgb(164, 71, 250);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  align-items: center;
+}
+
+.leftSectionButton {
+  margin-left: 15px;
+  color: white;
+  width: 250px;
+  font-family: Roboto;
+  font-size: 15px;
+  margin-top: 10px;
+}
+.middleSectionSearch {
+  width: 700px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-indent: 10px;
+  color: grey;
+  border-radius: 18px;
+  border: none;
+  margin-top: 5px;
+}
+.rightSectionButton {
+  
+  margin-left: 90px;
+  border-color: white;
+  border-width: 1px;
+  background-color: rgb(164, 71, 250);
+  border-style: solid;
+  color: white;
+  font-family: Roboto;
+  font-size: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.gmailInbox {
+  border-radius: 10px;
+  margin-top: 200px;
+ 
+  margin-left: 10px;
+  padding-top: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding-bottom: 10px;
+  width: 550px;
+}
+.gmailParagraph{
+  font-family: Roboto , Arial;
+  font-size: 15px;
+  color: rgb(156, 156, 156);
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+.gmailImg {
+  height: 60px;
+  border-radius: 30px;
+  margin-left: 15px;
+}
+.divGmailBoxes {
+  flex-direction: column; 
+  margin-left: 10px;
+}
+.gmailTitle {
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-family: Roboto, Arial;
+  font-weight: bold;
+  margin-right: 330px;
+}
+.gmailTime{
+  font-size: 13px;
+  color: gray;
+  align-items: center;
+  margin-top: 4px;
+}
+.gmailSecond {
+  margin-bottom: 3px;
+  font-size: 14px;
+  font-family: Roboto, Arial;
+  font-weight: bold;
+}
+.gmailAbout {
+  color: gray;
+  font-size: 13px;
 }

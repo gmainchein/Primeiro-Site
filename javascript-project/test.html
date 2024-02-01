@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Calculadora</title>
+    <style>
+      .elementosCalculadora {
+        margin-left: 500px;
+        display: flex;
+        align-items: center;
+        vertical-align: middle;
+        flex-direction: row;
+        margin-bottom: 10px;
+      }
+
+      body {
+        background-color: rgb(73, 90, 90);
+        margin: 0px 0px 0px 0px;
+        padding-bottom: 30px;
+      }
+
+      .header {
+        margin-left: 100px;
+        margin-right: 100px;
+        border-radius: 18px;
+        margin-top: 100px;
+        height: 50px;
+        background-color: rgb(250, 249, 246);
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        box-shadow: rgb(73, 90, 90) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+
+      .tituloCalculadora {
+        font-size: 35px;
+        font-family: sans-serif;
+        text-shadow: 0px 0px 6px rgba(43, 41, 41, 0.7);
+        letter-spacing: 5px;
+        font-weight: 700;
+      }
+
+      .numCalculadora {
+        cursor: pointer;
+        font: bold;
+        font-family: Helvetica;
+        margin-right: 20px;
+        width: 80px;
+        height: 80px;
+        align-items: middle;
+        justify-content: center;
+        font-size: 30px;
+        border-radius: 80px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: black;
+        background-color: whitesmoke;
+        transition: opacity 0.3s;
+      }
+      .numCalculadora:hover {
+        opacity: 0.7;
+      }
+
+      .divPedraPapel {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 400px;
+        display: flex;
+        background-color: white;
+        padding: 100px 100px 100px 100px;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .titlePPT {
+        font-size: 25px;
+        font-family: sans-serif;
+        font-weight: bolder;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+      }
+      .botaoPPT {
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+        border-style: solid;
+        align-items: center;
+        background-color: rgb(61, 61, 61);
+      }
+      .botaoPPT:hover {
+        opacity: 0.7;
+      }
+
+      .divCaraCoroa {
+        margin-top: 50px;
+        background-color: blueviolet;
+        margin-left: 10px;
+        margin-right: 10px;
+        display: flex;
+        flex-direction: row;
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+
+      .pCC , .js-display-results , .js-show-stats {
+        color: aliceblue;
+        font-size: 25px;
+        font-family: sans-serif;
+        font-weight: bolder;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        margin-left: 100px;
+        margin-right: 100px;
+      }
+      
+      .botaoCC {
+        margin-right: 25px;
+        height: 75px;
+        width: 75px;
+        border-radius: 10px;
+        border: none;
+      }
+
+      
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <p class="tituloCalculadora">Calculadora</p>
+    </div>
+    
+    <div class="elementosCalculadora" style="margin-top: 50px;">
+      <button class="numCalculadora" onclick=" calculador += '1'; console.log(calculador);">
+        1
+      </button>
+      <button class="numCalculadora" onclick=" calculador += '2'; console.log(calculador);">
+        2
+      </button>
+      <button class="numCalculadora" onclick=" calculador += '3'; console.log(calculador);">
+        3
+      </button>
+      <button class="numCalculadora" onclick=" calculador += '+'; console.log(calculador);">
+        +
+      </button> 
+    </div>
+   
+    <div  class="elementosCalculadora">
+      <button class="numCalculadora" onclick=" calculador += '4'; console.log(calculador);">
+        4
+      </button>
+      <button class="numCalculadora" onclick=" calculador += '5'; console.log(calculador);">
+        5
+      </button>
+      <button class="numCalculadora" onclick=" calculador += '6'; console.log(calculador);">
+        6
+      </button>
+      <button class="numCalculadora" onclick=" calculador -= '-'; console.log(calculador);">
+        -
+      </button> 
+    </div>
+    
+    
+    <div class="elementosCalculadora">
+      <button class="numCalculadora" onclick=" calculador += '7'; console.log(calculador);">
+        7
+      </button>
+      <button class="numCalculadora" onclick=" calculador += '8'; console.log(calculador);">
+        8
+      </button>
+      <button class="numCalculadora" onclick=" calculador += '9'; console.log(calculador);">
+        9
+      </button>
+      <button class="numCalculadora" onclick=" calculador += '*'; console.log(calculador);">
+        *
+      </button> 
+    </div>
+    
+    
+    <div class="elementosCalculadora">
+      <button class="numCalculadora" onclick=" calculador += '0'; console.log(calculador);">
+        0
+      </button>
+      <button class="numCalculadora" onclick=" calculador += '.'; console.log(calculador);">
+        .
+      </button>
+      <button class="numCalculadora" onclick="  console.log(eval(calculador));">
+        =
+      </button>
+      <button class="numCalculadora" onclick=" calculador += '/'; console.log(calculador);">
+        /
+      </button> 
+    </div>
+    <div class="elementosCalculadora">
+      <button class="numCalculadora" onclick=" calculador= '';console.log(calculador); console.log('The operation was cleared');">
+        Clear
+      </button>
+    </div>
+
+
+
+    <div class="divPedraPapel">
+      <div style="display: block;">
+        <p class="titlePPT">Pedra Papel tesoura</p>
+      </div>
+      
+      <button class="botaoPPT" onclick="
+        executeGame('Pedra');
+      "
+      >
+        <img src="rock.svg">
+      </button>
+
+      <button class="botaoPPT"
+      onclick="
+        executeGame('Papel');
+      ">
+        <img src="rolled-up-newspaper.svg">
+      </button>
+
+      <button class="botaoPPT" 
+       onclick="
+          executeGame('Tesoura')
+        ">
+        <img src="scissors.svg">
+      </button>
+      <button class="botaoPPT"
+      onclick=" stats = {
+        wins: 0,
+        draws: 0,
+        losses: 0 
+      }
+        localStorage.removeItem('stats');
+      ">
+        clear
+      </button>
+    </div>
+    
+
+
+    <div class="divCaraCoroa">
+      
+      <div class="divCC">
+        <p class="pCC">Cara Ou Coroa</p>
+      </div>
+      <button class="botaoCC" onclick="
+        resultCC('Cara')
+        mostrarStats()
+      ">
+        Cara
+      </button>
+      <button class="botaoCC" onclick="
+       resultCC('Coroa')
+       mostrarStats()
+      ">
+        Coroa
+      </button>
+      <button class="botaoCC" onclick="
+       Partidas = {
+        vitorias: 0,
+        derrotas: 0
+       }
+       localStorage.removeItem('historicoPartidas')
+
+       document.querySelector('.js-display-results')
+        .innerHTML = ``
+        
+        document.querySelector('.js-show-stats')
+        .innerHTML = ``
+      ">
+        Clear
+      </button>
+      <div>
+        <p class="js-display-results"></p>
+        <p class="js-show-stats"></p> 
+      </div> 
+    </div>
+    </div>
+    
+    
+
+
+    <script>
+      let stats = JSON.parse(localStorage.getItem('stats')) || {
+        wins: 0 ,
+        draws: 0 ,
+        losses: 0 
+      };
+      function executeGame(playerMove)
+      {
+        
+        const pcChoice = computerMove();
+        let finalResult = '';
+      
+        if (playerMove ===  'Pedra')
+        {
+            if (pcChoice === 'Pedra') {
+            finalResult = 'Empate';}
+
+            else if (pcChoice === 'Papel') {
+            finalResult = 'Derrota';}
+
+            else if (pcChoice === 'Tesoura') {
+            finalResult = 'Vitoria';} 
+        } else if (playerMove === 'Papel') {
+            if (pcChoice === 'Pedra') {
+            finalResult = 'Vitoria';}
+
+            else if (pcChoice === 'Papel') {
+            finalResult = 'Empate';}
+
+            else if (pcChoice === 'Tesoura') {
+            finalResult = 'Derrota';}
+          }   else if (playerMove === 'Tesoura'){
+                if (pcChoice === 'Pedra') {
+                finalResult = 'Derrota';}
+
+                else if (pcChoice === 'Papel') {
+                finalResult = 'Vitoria';}
+
+                else if (pcChoice === 'Tesoura') {
+                finalResult = 'Empate';}
+            }
+            
+            if(finalResult === 'Vitoria'){
+              stats.wins += 1;
+            } else if (finalResult === 'Empate') {
+                stats.draws += 1;
+            } else if (finalResult === 'Derrota') {
+                stats.losses += 1;
+            }
+
+            localStorage.setItem('stats', JSON.stringify(stats));
+
+          alert( `Voce jogou ${playerMove}. O computador jogou ${ pcChoice}. Logo o resultado da partida foi: ${finalResult}
+Vitorias:${stats.wins}. Empates:${stats.draws}. Derrotas:${stats.losses}`);
+        }
+    
+      
+      function computerMove(){
+        const computer = Math.random();
+      let pcChoice = '';
+      if (computer >= 0 && computer < 1/3) {
+        pcChoice = 'Pedra';
+      }
+      else if (computer>= 1/3 && computer < 2/3) {
+        pcChoice = 'Papel';
+      }
+      else if (computer >= 2/3 && computer <= 1) {
+        pcChoice = 'Tesoura';
+      }
+       return pcChoice;
+      }
+
+
+      // CARA COROA 
+      // CARA COROA 
+      // CARA COROA 
+      // CARA COROA 
+
+      let Partidas = JSON.parse(localStorage.getItem('historicoPartidas')) ||{
+        vitorias: 0,
+        derrotas: 0
+      }
+      
+      function resultCC(playerPick){
+       
+        let resultado = ''
+        const computerPick = pickCC()
+
+        if(playerPick === computerPick){
+          resultado = 'Acertou';
+        } else if ( playerPick !== computerPick) {
+          resultado = 'Perdeu';
+        }
+
+        if (resultado === 'Acertou') {
+          Partidas.vitorias += 1;
+        } else if (resultado === 'Perdeu') {
+            Partidas.derrotas += 1;
+        }
+
+        localStorage.setItem('historicoPartidas', JSON.stringify(Partidas))
+      document.querySelector('.js-display-results')
+        .innerHTML = `Você jogou ${playerPick} e ${resultado}`
+      }
+
+
+      function pickCC(){
+        const pick = Math.random();
+        let pickChoice = '';
+
+        if (pick >= 0 && pick <= 0.5) {
+          pickChoice = 'Cara';
+        } else if (pick > 0.5 && pick <= 1) {
+            pickChoice = 'Coroa';
+        }
+        return pickChoice
+      }
+
+      function mostrarStats() {
+        document.querySelector('.js-show-stats')
+        .innerHTML = `Vitórias: ${Partidas.vitorias} . Derrotas:${Partidas.derrotas}`;
+      }
+    </script>
+
+  </body>
+</html>

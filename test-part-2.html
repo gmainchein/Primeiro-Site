@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tests</title>
+  <style>
+
+    .divSideBar {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: blueviolet;
+    }
+    .Right-SideBar {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      width: 500px;
+      background-color: rgb(55, 228, 70);
+
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.8);
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; /* alinha horizontal */
+      align-items: center; /* alinha vertical */
+    }
+    .modal {
+      background-color: white;
+      height: 200px;
+      width: 500px;
+      border-radius: 25px;
+    }
+    
+    p , button{    
+    margin-left: 30px;}
+    
+    .modal-items {
+      display: block;
+      font-size: 23px;
+      font-family: sans-serif;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body style="height: 3000px;">
+  <div class="Right-SideBar">Right-SideBar</div>
+  <div class="overlay">
+    <div class="modal">
+        <div class="modal-items">
+          <p>Modal Title</p>
+        </div>  
+          <p style="font-size: 20px;"> 
+            This is a modal
+          </p>
+          <button style="width: 60px; height: 30px;" >
+            Close
+          </button>
+    </div>
+  </div>
+</body>
+</html>

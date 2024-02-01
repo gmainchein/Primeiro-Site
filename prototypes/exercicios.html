@@ -6,8 +6,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/exercisesfeatures.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,500;1,400;1,600&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body style="padding-bottom: 500px;">
      <style></style>
     <p class="UberRequest">Request a ride now</p>
     <input class="UberPickup" type="text" placeholder=" Enter pickup location" >
@@ -57,7 +60,7 @@
 
     <div class="TweetDesign">
      
-      <img class="imagem" src="fotoguieloah.jpeg">
+      <img class="imagem" src="images/fotoguieloah.jpeg">
       <input class="SearchBar" placeholder="What's happening?" type="text">
       <button class="guiTweet">Tweet</button>
 
@@ -74,24 +77,41 @@
       Agree & Join
     </button>
   
-    <div class="PetBook">
-      <img class="PetImg" src="sheldon.png.jpeg">
-      <p class="PetName">Sheldon</p>
-      <p class="PetCommon">2 mutual friends</p>
-      <button class="PetAdd">Add Friend</button>
+    <div style="display: grid; grid-template-columns: 220px 220px 100px; column-gap: 15px; align-items: center; vertical-align: top; margin-top: 10px;">
+      
+      <div class="PetBook">
+        <img class="PetImg" src="images/sheldon.png.jpeg">
+        <p class="PetName">Sheldon</p>
+        <p class="PetCommon">2 mutual friends</p>
+        <button class="PetAdd">Add Friend</button>
+      </div>
+      <div class="PetBook">
+        <img class="PetImg" src="images/krys.png.jpeg">
+        <p class="PetName">Krystal</p>
+        <p class="PetCommon">1 mutual friends</p>
+        <button class="PetAdd">Add Friend</button>
+      </div>    
+        
+      <div class="divSponsors">
+        <p class="sponsors">Sponsors</p>
+        <div class="divSpotify">
+          <img src="images/spotify-logo-png-7053.png" class="spotifyLogo">
+        </div>
+        <div class="divSpotify">
+          <img src="images/car-logo-png-2315.png" class="spotifyLogo" style="height: 42px;width: 30px;">
+        </div>
+        <div class="divSpotify">
+          <img src="images/telegram-logo-944.png" class="spotifyLogo">
+        </div>
+      </div>  
     </div>
-    
-    <div class="PetBook">
-      <img class="PetImg" src="krys.png.jpeg">
-      <p class="PetName">Krystal</p>
-      <p class="PetCommon">1 mutual friends</p>
-      <button class="PetAdd">Add Friend</button>
-    </div>
+
     <br>
+    
     <!-- ADD mutuals and add friend-->
     <div class="divInstaMutualTemplate">
     <div class="divInstaPicture" > 
-      <img src="sheldon.png.jpeg" class="instaPicture">
+      <img src="images/sheldon.png.jpeg" class="instaPicture">
     </div>
       <div class="divInstaStats"> 
         <div> <p class="instaName">sheldon</p>  </div>
@@ -105,7 +125,7 @@
 
     <div class="divInstaMutualTemplate">
       <div class="divInstaPicture" > 
-        <img src="krys.png.jpeg" class="instaPicture">
+        <img src="images/krys.png.jpeg" class="instaPicture">
       </div>
       <div class="divInstaStats"> 
         <div> <p class="instaName">krystal</p>  </div>
@@ -116,7 +136,80 @@
       <button class="instaFollow">Follow</button> 
       </div>
     </div>
+    
+
+    <div style="display: grid;grid-template-columns: 200px 75px;">
+      <div style="background-color: lightseagreen;">200px</div>
+      <div style="background-color: lightpink;">75px</div>
+    </div>
+    
+    
+    <div style=" display: grid;grid-template-columns: 50px 1fr 75px">
+      <div style="background-color: lightseagreen;">col 1</div>
+      <div style="background-color: lightgreen;">col 2</div>
+      <div style="background-color: lightpink;">col 3</div>
+    </div>
+    
+    <p> <strong>Grid:</strong></p>
+
+    <div style=" margin-top: 100px;  display: grid;grid-template-columns: 1fr 1fr 1fr 1fr; column-gap: 20px; row-gap: 10px;">
+      <div style="background-color: lightsalmon;">col 1</div>
+      <div style="background-color: lightsalmon;">col 2</div>
+      <div style="background-color: lightsalmon;">col 3</div>
+      <div style="background-color: lightsalmon;">col 4</div>
+
+      
+      <div style="background-color: lightsalmon;">col 1</div>
+      <div style="background-color: lightsalmon;">col 2</div>
+      <div style="background-color: lightsalmon;">col 3</div>
+      <div style="background-color: lightsalmon;">col 4</div>
+
+
+    </div>
+
+    <p> <strong>Flex:</strong></p>
+    
+    <div style="margin-top: 35px; display: flex; flex-direction: row; justify-content: space-around;">
+      <div style=" width: 200px; background-color: lightcoral;">200px</div>
+      <div style=" width: 75px; background-color: lightgreen;">75px</div>
+    </div>
   
+    <div class="divSearchBar"">
+      <div class="leftSection" style="width: 200px;"> <p class="leftSectionButton">Home</p></div>
+      <div class="middleSection" style="flex: 1;"> <input type="text" placeholder="Search" class="middleSectionSearch"></div>
+      <diva class="rightSection" style="width: 200px;"><button class="rightSectionButton">Dowload</button></div>
+    </div>
+  
+    <div class="gmailInbox">
+      <div style="display: block;">
+        <p class="gmailParagraph">ALL INBOXES</p>
+      </div>
+      <div style="display: flex; flex-direction: row; margin-bottom: 30px;">
+        <img  class="gmailImg" src="images/nubank-logo-2-1532x1536.png">
+        <div class="divGmailBoxes">
+          <div style="display: inline-flex; justify-content: center;">
+          <p class="gmailTitle">Nubank</p>
+          <p class="gmailTime">20:50 PM</p>
+          </div>
+          <p class="gmailSecond">Oferta de ano novo!</p>
+          <p class="gmailAbout">Olá! Somos da Nubank o maior banco digital da América Latina...</p>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: row; margin-bottom: 30px;">
+        <img  class="gmailImg" src="images/Netflix_icon.svg.png">
+        <div class="divGmailBoxes">
+          <div style="display: inline-flex; justify-content: center;">
+          <p class="gmailTitle">Netflix</p>
+          <p class="gmailTime">18:23 PM</p>
+          </div>
+          <p class="gmailSecond">Novos filmes entraram no catálogo!</p>
+          <p class="gmailAbout">Olá! Somos a Netflix neste mês de janeiro estamos com...</p>
+        </div>
+      </div>
+
+    </div>
+
   </body>
   </html>
 

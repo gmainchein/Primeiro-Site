@@ -6,6 +6,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/websitefeatures.css">  
+   
+   <style>
+    .Product-Placeholder {
+
+    }
+   </style>
+  
   </head>
   <body>
     <p>
@@ -30,5 +37,39 @@
     </button>
     
     <button class="Tweet">Tweet</button>
+
+    <div>
+      <input placeholder="Product cost:" class="Product-Placeholder" 
+      onkeydown=" EnterParaConfirmar(event)">
+      
+      <button onclick=" cacularValor()
+      ">
+      Calcular
+      </button>
+
+      <p class="js-display-cost">
+
+      </p>
+    </div>
+
+    <script>
+       
+       function cacularValor(){
+        const Product = document.querySelector('.Product-Placeholder');
+        let valor = Number(Product.value);
+        if ( valor > 40) {
+          valor += 10 ;
+        }
+      
+        document.querySelector('.js-display-cost')
+        .innerHTML = ` o valor total do produto foi de: R$${valor}`;
+      }
+
+      function EnterParaConfirmar(event) {
+        if (event.key === 'Enter') {
+          cacularValor();
+        }
+      }
+    </script>
   </body>
 </html>
